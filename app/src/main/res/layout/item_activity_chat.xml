@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#E5E7EE"
+    android:orientation="vertical"
+    android:padding="6dp">
+
+    <LinearLayout
+        android:id="@+id/ly_received_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end">
+
+        <LinearLayout
+            android:id="@+id/received"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/item_chat_send">
+
+            <TextView
+                android:id="@+id/item_tv_received_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="1"
+                android:textColor="#fff" />
+        </LinearLayout>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/item_iv_received"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/smile" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ly_send_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/item_iv_send"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/smile" />
+        <LinearLayout
+            android:id="@+id/send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/item_chat_received">
+
+            <TextView
+                android:id="@+id/item_tv_send_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="1"
+                android:textColor="#fff" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

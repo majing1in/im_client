@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">im_client</string>
+
+    <string name="title_activity_login">Sign in</string>
+
+    <string name="prompt_number">Number</string>
+
+    <string name="prompt_password">Password</string>
+
+    <string name="action_sign_in">登 陆</string>
+
+    <string name="action_sign_in_short">Sign in</string>
+
+    <string name="welcome">"Welcome !"</string>
+
+    <string name="invalid_username">Not a valid username</string>
+
+    <string name="invalid_password">Password must be >5 characters</string>
+
+    <string name="login_failed">"Login failed"</string>
+
+    <string name="login_registry">"申请注册 "</string>
+
+    <string name="login_agreement">" 用户协议"</string>
+
+    <string name="registry_number">"Number"</string>
+
+    <string name="registry_password">"Password"</string>
+
+    <string name="registry_password_again">"PasswordAgain"</string>
+
+    <string name="registry_registry">点击注册</string>
+</resources>

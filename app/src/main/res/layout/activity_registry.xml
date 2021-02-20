@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context="com.xiaoma.im.activities.RegistryActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tb_registry_title"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#01B2FF"
+        android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="注册"
+            android:textColor="#fff"
+            android:textSize="22sp"
+            android:textStyle="normal" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#00868B" />
+
+
+    <ProgressBar
+        android:id="@+id/progressbar_registry"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/et_registry_username"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="24sp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="24sp"
+        android:background="@drawable/shape_oval"
+        android:hint="请输入账号(10 位数字)"
+        android:inputType="number"
+        android:paddingLeft="8dp" />
+
+    <EditText
+        android:id="@+id/et_registry_password"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="24sp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="24sp"
+        android:background="@drawable/shape_oval"
+        android:hint="请输入密码"
+        android:inputType="textPassword"
+        android:paddingLeft="8dp"
+        android:selectAllOnFocus="true" />
+
+    <EditText
+        android:id="@+id/et_registry_passwordagain"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="24sp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="24sp"
+        android:background="@drawable/shape_oval"
+        android:hint="请再次确认密码"
+        android:inputType="textPassword"
+        android:paddingLeft="8dp"
+        android:selectAllOnFocus="true" />
+
+    <TextView
+        android:id="@+id/tv_registry_token"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="24sp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="24sp"
+        android:background="#00868B"
+        android:gravity="center"
+        android:text="这是验证码" />
+
+    <EditText
+        android:id="@+id/et_registry_token"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="24sp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="24sp"
+        android:background="@drawable/shape_oval"
+        android:hint="请输入验证码"
+        android:inputType="number"
+        android:paddingLeft="8dp"
+        android:selectAllOnFocus="true" />
+
+    <Button
+        android:id="@+id/bt_registry_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_oval"
+        android:text="@string/registry_registry" />
+
+
+</LinearLayout>

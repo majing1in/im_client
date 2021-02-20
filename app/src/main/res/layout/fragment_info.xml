@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="24dp"
+        android:background="#fff"
+        android:layout_marginRight="15dp">
+
+        <ScrollView
+            android:id="@+id/info_scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fadeScrollbars="false">
+            <LinearLayout
+                android:id="@+id/info_linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/iv_state_smile"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/smile" />
+
+                <TextView
+                    android:id="@+id/tv_info_nick_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginStart="24sp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="24sp"
+                    android:background="@drawable/shape_oval"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="12sp"
+                    android:text="昵称:"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_info_sign"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginStart="24sp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="24sp"
+                    android:background="@drawable/shape_oval"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="12sp"
+                    android:text="个性签名:"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_info_gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginStart="24sp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="24sp"
+                    android:background="@drawable/shape_oval"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="12sp"
+                    android:text="性别:"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_info_birth"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginStart="24sp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="24sp"
+                    android:background="@drawable/shape_oval"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="12sp"
+                    android:text="生日:"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_info_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginStart="24sp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="24sp"
+                    android:background="@drawable/shape_oval"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="12sp"
+                    android:text="电子邮箱:"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_info_constellation"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginStart="24sp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="24sp"
+                    android:background="@drawable/shape_oval"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="12sp"
+                    android:text="星座:"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/bt_info_update"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginRight="24dp"
+                    android:background="#1B70D8"
+                    android:text="修改信息"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/bt_info_exit"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="24dp"
+                    android:background="#D81B60"
+                    android:text="退出登录"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+
+</LinearLayout>
